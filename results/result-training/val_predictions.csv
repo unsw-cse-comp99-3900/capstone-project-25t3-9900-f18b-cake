@@ -1,0 +1,59 @@
+y_true,y_pred
+Healthy,B-lymphoblastic leukaemia
+Healthy,Healthy
+Healthy,Healthy
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+Healthy,T-lymphoblastic leukaemia
+Healthy,T-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+Acute megakaryoblastic leukaemia,Acute myeloid leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+Juvenile myelomonocytic leukaemia,Juvenile myelomonocytic leukaemia
+Acute myeloid leukaemia,Acute myeloid leukaemia
+Acute myeloid leukaemia,Acute myeloid leukaemia
+T-lymphoblastic leukaemia,T-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+T-lymphoblastic leukaemia,T-lymphoblastic leukaemia
+Healthy,T-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+Healthy,Healthy
+T-lymphoblastic leukaemia,T-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+Acute promyelocytic leukaemia,Acute promyelocytic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+Healthy,B-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+T-lymphoblastic leukaemia,T-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+Acute promyelocytic leukaemia,Acute promyelocytic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+Healthy,B-lymphoblastic leukaemia
+T-lymphoblastic leukaemia,T-lymphoblastic leukaemia
+Mixed phenotype acute leukaemia,Acute myeloid leukaemia
+Acute myeloid leukaemia,Acute myeloid leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+Healthy,Healthy
+Acute undifferentiated leukaemia,Acute myeloid leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+Acute myeloid leukaemia,Acute myeloid leukaemia
+Acute myeloid leukaemia,Acute myeloid leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+Healthy,Healthy
+Acute myeloid leukaemia,Acute myeloid leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+T-lymphoblastic leukaemia,T-lymphoblastic leukaemia
+Mixed phenotype acute leukaemia,Acute myeloid leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia
+B-lymphoblastic leukaemia,B-lymphoblastic leukaemia

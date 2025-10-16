@@ -1,0 +1,23 @@
+{
+  "entry": "training.py:demoA_train_from_csv",
+  "id_column": "biosample_id",
+  "label_column": "label",
+  "selector": {
+    "name": "SelectKBest(f_classif)",
+    "top_k": 10000
+  },
+  "model": {
+    "name": "RandomForestClassifier",
+    "params": {
+      "n_estimators": 200,
+      "random_state": 42,
+      "class_weight": "balanced"
+    }
+  },
+  "n_features_after_select": 10000,
+  "metrics_val": {
+    "accuracy": 0.827586,
+    "f1_macro": 0.56935,
+    "train_time_sec": 0.206
+  }
+}
