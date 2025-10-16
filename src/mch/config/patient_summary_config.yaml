@@ -1,0 +1,32 @@
+# Configuration for model summary
+model_location: "/data/projects/classifiers/methylation/data/freeze0824/models"
+base_model_name: "ZERO2"
+mValue_data_file: "/data/projects/classifiers/methylation/data/freeze0824/featureValuesWithNewSamples0824.csv"
+
+methylation:
+  data:
+    filteredMValueFile: "/data/projects/classifiers/methylation/data/freeze0824/methylationHG38FilteredMValue.parquet"
+    #baseMValueFiles: "/home/cciamr.local/bcurran/data/R_drive/CB/bcurran/methylation/data/mValues"
+    sample_upload_directory: "/home/cciamr.local/bcurran/data/R_drive/CB/bcurran/methylation/data/mValues"
+    sample_mValues_directory: "/home/cciamr.local/bcurran/data/R_drive/CB/bcurran/methylation/data/mValues"
+    sample_betaValues_directory: "/home/cciamr.local/bcurran/data/R_drive/CB/bcurran/methylation/data/betaValues"
+    #sample_upload_directory: "/data/projects/classifiers/methylation/data/sampleUploads/"
+    existing_m_values_file: "/data/projects/classifiers/methylation/data/freeze0824/featureValues0824.csv"
+
+  annotation:
+    v2Manifest: "/data/projects/classifiers/methylation/data/epicV2ManifestAlternate.csv"
+
+  logging:
+    level: INFO
+    file: "/data/projects/classifiers/methylation/data/logs/sample_loader.log"
+    data_generation_log: "/data/projects/classifiers/methylation/data/logs/data_generation/data_generation"
+
+  data_generation:
+    raw_methylation_data_directory: "/home/cciamr.local/bcurran/data/R_drive/PM/Work_In_Progress/Molecular_Profiling/Methylation_Array/PatientResults/"
+    file_suffixes:  
+      - "_methylation_anno_hg38.txt"
+      #- "_methylation_anno.txt"
+
+# freeze version.
+freeze: "freeze0824"
+freezeNumber: "0824"
