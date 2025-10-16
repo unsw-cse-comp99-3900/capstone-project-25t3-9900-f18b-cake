@@ -1,0 +1,3 @@
+base_m_value_file: "{WORKING_DIRECTORY}/data/{FREEZE}/methylation_HG38_base_m_values.csv"
+filtered_m_value_file: "{WORKING_DIRECTORY}/data/{FREEZE}/methylation_HG38_filtered_m_value.parquet"
+probe_metadata_file: "{WORKING_DIRECTORY}/data/zcc_methylation_probe_202401261526.csv"
