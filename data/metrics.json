@@ -1,0 +1,8 @@
+{
+  "sequential_time_sec": 18.566449099998863,
+  "parallel_time_sec": 28.557146200000716,
+  "speedup": 0.6501507177912055,
+  "concurrency": 2,
+  "retries": 2,
+  "backoff_sec": 0.5
+}

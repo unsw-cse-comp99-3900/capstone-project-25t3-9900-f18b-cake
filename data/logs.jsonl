@@ -1,0 +1,12 @@
+{"event": "manifest_written", "ts": 1760531284.5317445, "counts": {"total": 390, "train": 273, "val": 58, "test": 59}}
+{"event": "subset_csv_written", "ts": 1760531297.4803205, "paths": {"train": "splits_concat\\train.csv", "val": "splits_concat\\val.csv", "test": "splits_concat\\test.csv"}}
+{"event": "process_start", "split": "train", "ts": 1760531297.4810507}
+{"event": "process_done", "split": "train", "duration_sec": 12.869550399998843, "ts": 1760531310.351185, "stats": {"n_rows": 273, "skipped": true}}
+{"event": "process_start", "split": "val", "ts": 1760531310.3525748}
+{"event": "process_done", "split": "val", "duration_sec": 2.8360929999998916, "ts": 1760531313.1893585, "stats": {"n_rows": 58, "skipped": true}}
+{"event": "process_start", "split": "test", "ts": 1760531313.1903734}
+{"event": "process_done", "split": "test", "duration_sec": 2.8556879999996454, "ts": 1760531316.046633, "stats": {"n_rows": 59, "skipped": true}}
+{"event": "process_done_parallel", "split": "val", "duration_sec": 3.0941376999999193, "ts": 1760531322.7972934, "stats": {"n_rows": 58, "skipped": true}}
+{"event": "process_done_parallel", "split": "test", "duration_sec": 3.0232152000007773, "ts": 1760531326.1102536, "stats": {"n_rows": 59, "skipped": true}}
+{"event": "process_done_parallel", "split": "train", "duration_sec": 13.250507099999595, "ts": 1760531344.5208635, "stats": {"n_rows": 273, "skipped": true}}
+{"event": "summary", "metrics": {"sequential_time_sec": 18.566449099998863, "parallel_time_sec": 28.557146200000716, "speedup": 0.6501507177912055, "concurrency": 2, "retries": 2, "backoff_sec": 0.5}, "ts": 1760531344.605686}
