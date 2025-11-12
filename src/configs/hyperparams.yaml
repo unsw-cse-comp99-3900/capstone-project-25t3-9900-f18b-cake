@@ -1,0 +1,121 @@
+# v1.0 — RF per-class hyperparams (Spark ML)
+# 说明：
+# - default 段为全局默认；各类只写需要覆盖的字段
+# - 可用字段：numTrees, maxDepth, maxBins, subsamplingRate, featureSubsetStrategy, minInstancesPerNode
+# - impurity 默认为 "gini"（无需显式写）
+
+default:
+  numTrees: 400            # 通用稳健起点
+  maxDepth: 16             # 适中深度，兼顾表达力与过拟合风险
+  maxBins: 64              # 连续特征分箱；过大显著增时
+  subsamplingRate: 0.8     # 每棵树的样本子采样
+  featureSubsetStrategy: sqrt   # 常用且稳健
+  minInstancesPerNode: 2   # 叶子最小样本，抑制过拟合
+
+# 1) Leukaemia — 数据量通常较多、异质性中等：更多树，但深度稍降以控过拟合
+Leukaemia:
+  numTrees: 600
+  maxDepth: 14
+  maxBins: 64
+  subsamplingRate: 0.85
+  featureSubsetStrategy: sqrt
+  minInstancesPerNode: 2
+
+# 2) Brain_tumour — 异质性高（多亚型）：适当加深、增加分箱
+Brain_tumour:
+  numTrees: 550
+  maxDepth: 18
+  maxBins: 128
+  subsamplingRate: 0.8
+  featureSubsetStrategy: sqrt
+  minInstancesPerNode: 2
+
+# 3) Sarcoma — 偏稀有、易过拟合：略浅，适度提高叶子最小样本
+Sarcoma:
+  numTrees: 380
+  maxDepth: 13
+  maxBins: 64
+  subsamplingRate: 0.85
+  featureSubsetStrategy: sqrt
+  minInstancesPerNode: 3
+
+# 4) Lymphoma — 数据中等，结构相对清晰：保持较多树与中等深度
+Lymphoma:
+  numTrees: 500
+  maxDepth: 16
+  maxBins: 64
+  subsamplingRate: 0.85
+  featureSubsetStrategy: sqrt
+  minInstancesPerNode: 2
+
+# 5) Neuroblastoma — 样本偏少：更浅、提高叶子最小样本
+Neuroblastoma:
+  numTrees: 350
+  maxDepth: 12
+  maxBins: 64
+  subsamplingRate: 0.9
+  featureSubsetStrategy: sqrt
+  minInstancesPerNode: 3
+
+# 6) Kidney_tumour — 中等规模：略降树数，维持稳健深度
+Kidney_tumour:
+  numTrees: 420
+  maxDepth: 14
+  maxBins: 64
+  subsamplingRate: 0.85
+  featureSubsetStrategy: sqrt
+  minInstancesPerNode: 2
+
+# 7) Liver_tumour — 中等规模、异质性适中：略加深
+Liver_tumour:
+  numTrees: 450
+  maxDepth: 15
+  maxBins: 64
+  subsamplingRate: 0.85
+  featureSubsetStrategy: sqrt
+  minInstancesPerNode: 2
+
+# 8) Germ_cell_tumour — 异质性高（混合型常见）：更深、更多分箱
+Germ_cell_tumour:
+  numTrees: 480
+  maxDepth: 17
+  maxBins: 128
+  subsamplingRate: 0.8
+  featureSubsetStrategy: sqrt
+  minInstancesPerNode: 2
+
+# 9) Carcinoma — 上皮源、亚型多：更深、较多树
+Carcinoma:
+  numTrees: 500
+  maxDepth: 16
+  maxBins: 128
+  subsamplingRate: 0.8
+  featureSubsetStrategy: sqrt
+  minInstancesPerNode: 2
+
+# 10) Histiocytic_disorder — 罕见：浅一些并提高叶子最小样本，防过拟合
+Histiocytic_disorder:
+  numTrees: 320
+  maxDepth: 12
+  maxBins: 64
+  subsamplingRate: 0.9
+  featureSubsetStrategy: log2
+  minInstancesPerNode: 4
+
+# 11) Other_benign_lowgrade — 混杂良性/低度恶性：浅树，偏保守
+Other_benign_lowgrade:
+  numTrees: 300
+  maxDepth: 12
+  maxBins: 64
+  subsamplingRate: 0.85
+  featureSubsetStrategy: sqrt
+  minInstancesPerNode: 3
+
+# 12) Healthy — 对照组通常样本多：较浅、树数适中，避免“学会过拟合正常模式”
+Healthy:
+  numTrees: 320
+  maxDepth: 10
+  maxBins: 64
+  subsamplingRate: 0.85
+  featureSubsetStrategy: sqrt
+  minInstancesPerNode: 2
