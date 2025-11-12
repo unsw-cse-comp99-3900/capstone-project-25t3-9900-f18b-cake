@@ -1,0 +1,83 @@
+super_classes:
+  - Leukaemia
+  - Brain_tumour
+  - Sarcoma
+  - Lymphoma
+  - Neuroblastoma
+  - Kidney_tumour
+  - Liver_tumour
+  - Germ_cell_tumour
+  - Carcinoma
+  - Histiocytic_disorder
+  - Other_benign_lowgrade
+  - Healthy
+
+mapping:
+  # 1. Leukaemia
+  "B-lymphoblastic leukaemia": Leukaemia
+  "T-lymphoblastic leukaemia": Leukaemia
+  "Acute myeloid leukaemia": Leukaemia
+  "Chronic myeloid leukaemia": Leukaemia
+  "Juvenile myelomonocytic leukaemia": Leukaemia
+
+  # 2. Brain_tumour
+  "Pilocytic astrocytoma": Brain_tumour
+  "Diffuse midline glioma": Brain_tumour
+  "Glioblastoma": Brain_tumour
+  "Medulloblastoma": Brain_tumour
+  "Ependymoma": Brain_tumour
+  "Atypical teratoid rhabdoid tumour": Brain_tumour
+  "Choroid plexus tumour": Brain_tumour
+
+  # 3. Sarcoma
+  "Osteosarcoma": Sarcoma
+  "Ewing sarcoma": Sarcoma
+  "Rhabdomyosarcoma": Sarcoma
+  "Synovial sarcoma": Sarcoma
+
+  # 4. Lymphoma
+  "Burkitt lymphoma": Lymphoma
+  "Anaplastic large cell lymphoma": Lymphoma
+  "B-lymphoblastic lymphoma": Lymphoma
+  "T-lymphoblastic lymphoma": Lymphoma
+
+  # 5. Neuroblastoma
+  "Neuroblastoma": Neuroblastoma
+  "CNS neuroblastoma": Neuroblastoma
+
+  # 6. Kidney_tumour
+  "Wilms tumour": Kidney_tumour
+  "Renal cell carcinoma": Kidney_tumour
+  "Clear cell sarcoma of kidney": Kidney_tumour
+
+  # 7. Liver_tumour
+  "Hepatoblastoma": Liver_tumour
+  "Hepatocellular carcinoma": Liver_tumour
+
+  # 8. Germ_cell_tumour
+  "Teratoma": Germ_cell_tumour
+  "Mixed germ cell tumour": Germ_cell_tumour
+  "Germ cell tumour": Germ_cell_tumour
+
+  # 9. Carcinoma
+  "Papillary thyroid carcinoma": Carcinoma
+  "Adrenocortical carcinoma": Carcinoma
+  "Colorectal carcinoma": Carcinoma
+  "Cholangiocarcinoma": Carcinoma
+
+  # 10. Histiocytic_disorder
+  "Langerhans cell histiocytosis": Histiocytic_disorder
+
+  # 11. 其他良性/低度恶性
+  "Neuroendocrine tumour": Other_benign_lowgrade
+  "Vascular tumour": Other_benign_lowgrade
+
+  # 12. Healthy
+  "Healthy": Healthy
+
+normalize:
+  lower: true
+  strip: true
+  replace:
+    - ["tumours", "tumour"]
+    - ["tumor", "tumour"]
